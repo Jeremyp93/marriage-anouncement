@@ -1,0 +1,13 @@
+<div #wrapper class="envelope-wrapper">
+    <div class="envelope">
+        <app-letter [envelopeState]="flap ? 'flap' : ''"></app-letter>
+    </div>
+    <div class="heart" (click)="toggleFlap()"></div>
+    @if (!flap) {
+        <div class="form">
+            <input #emailInput type="text" placeholder="Email">
+        </div>
+    }
+</div>
+  
+  
