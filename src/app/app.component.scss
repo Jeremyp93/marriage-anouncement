@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     div {
-        margin-top: 3rem;
+        margin-top: 4rem;
         font-family: 'Moontime';
         font-size: 39.6px;
         transform: rotate(-90deg);
@@ -36,44 +36,45 @@
   }
   
   .first-column {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    width: 30px;
   }
   
   .first-row {
     flex: 1;
-    //position: relative; /* Takes 1/3 of first column */
     border-right: 1px solid black;
-    //background-color: lightblue; /* Just for visualization */
   }
   
   .second-row {
-    flex: 4; /* Takes 2/3 of first column */
+    flex: 4;
     border-right: 1px solid black;
     position: relative;
-    //background-color: lightgreen; /* Just for visualization */
 
     &::after {
         content: '';
         position: absolute;
-        top: 0; /* Remove 10% starting from the top */
-        right: -2px; /* Move pseudo-element to hide part of the border */
-        width: 2px; /* Width of the pseudo-element (border width) */
-        height: 10%; /* Height of the pseudo-element to hide 10% */
-        background-color: #fbf7f4; /* Set the same color as the background */
+        top: 0;
+        right: -2px;
+        width: 2px;
+        height: 10%;
+        background-color: #fbf7f4;
     }
   }
   
   .second-column {
-    flex: 7; /* Takes 3/4 of total space */
+    flex: 1;
     padding: 1.5rem;
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
-    //background-color: lightgray; /* Just for visualization */
 
     img {
         max-width: 100%;
+    }
+
+    .text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
     }
   }
