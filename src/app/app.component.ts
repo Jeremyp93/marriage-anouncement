@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { ActivatedRoute, ParamMap, RouterOutlet } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 
@@ -13,15 +13,4 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'marriage-anouncement';
-  isChecked = false;
-
-  constructor(private translate: TranslateService) {}
-
-  onValueChange(): void {
-    if (!this.isChecked) {
-      this.translate.use('fr');
-    } else {
-      this.translate.use('nl');
-    }
-  }
 }
