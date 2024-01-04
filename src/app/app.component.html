@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="first-column">
         <div class="first-row">
         </div>
@@ -28,6 +28,41 @@
             <p>Merci de faire partie de nos vies.</p>
         </div>
     </div>
-</div>
+</div> -->
 
-<!-- <img src="../assets/Bleu Beige Élégant Floral Peint Faire part de Naissance.png" alt=""> -->
+<div class="container">
+    <div class="first-column">
+        <div class="first-row">
+        </div>
+        <div class="second-row">
+            <div class="rotated-text">
+                <div>
+                    Wedding
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+        </div>
+    </div>
+    <div class="second-column">
+        <div class="image">
+            <img src="../assets/IMG_2543.jpg">
+        </div>
+        <p class="title">{{'title' | translate }}</p>
+        <div class="subtitle">
+            <p class="sub-title">{{'subTitle' | translate }}</p>
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox"
+                    (change)="onValueChange()" [(ngModel)]="isChecked" />
+                <label for="language-toggle"></label>
+        
+                <span class="en">FR</span>
+                <span class="fr">NL</span>
+            </div>
+        </div>
+        <div class="text">
+            <p>{{'content' | translate }}</p>
+            <p>{{'end' | translate }}</p>
+        </div>
+    </div>
+</div>
